@@ -1,0 +1,13 @@
+#!/bin/bash
+
+git clone -q https://github.com/apalkowski/manuscript-template.git
+mv manuscript-template $1
+cd $1
+rm README.md
+rm LICENSE
+rm .gitignore
+rm templates/.gitkeep
+rm data/.gitkeep
+rm article-examples/.gitkeep
+rm analysis/.gitkeep
+rm -rf .git
